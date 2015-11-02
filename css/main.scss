@@ -34,53 +34,61 @@ body {
 form, input {
   margin: 0;
   background: none;
-  float: left;
   font-family: $font-stack;
   color: $primary-color;
-  opacity: 0.5;
-}
-button {
-  margin: 0;
-  border-radius: 0 5px 5px 0;
-  width: 40px;
-  height: 1.875em;
-  background: none;
-  border-left: none;
-  cursor: pointer;
+    #search {
+      width: 26.250em;
+      height: 1.875em;
+      border-radius: 5px;
+      padding: 10px;
+      opacity: 0.5;
+  }
 }
 label {
   font-size: 0.875em;
   font-weight: 700;
   @extend .fontmix;
+  padding-right: 15px;
+}
+select.select-list {
+  background: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: $font-stack;
+  color: $primary-color;
+  opacity: 0.5;
+  width: 160px;
 }
 header {
   margin: 0 auto;
   padding: 0;
   width: 60em;
-  height: 3em;
+  height: 50px;
   margin-top: 5%;
       .form-search {
         float: left;
         margin-left: 33px;
         border-right: none;
       }
-      .search-text {
-        width: 26.250em;
-        height: 1.875em;
-        border-radius: 5px 0 0 5px;
-        letter-spacing: -1px;
-        padding: 10px;
-      }
       .form-list {
         float: right;
         margin-right: 33px;
       }
 }
+button.form-button {
+  background: transparent url("../images/find.png") no-repeat;
+  cursor: pointer;
+  border: none;
+  width: 15px;
+  height: 15px;
+  text-indent: -9999em;
+}
 main {
   margin: 0 auto;
   padding: 0;
   width: 60em;
-  height: auto;
+  margin-top: 50px;
+  border: 1px solid black;
   -webkit-flex-flow: row wrap;
   justify-content: center;
   @include display-flexbox;
@@ -88,11 +96,32 @@ main {
       width: 26.875em;
       height: 12.188em;
       border-radius: 5px;
+      margin: 12.5px;
       border: 2px solid #f5f5f5;
-      margin: 15px;
         .article-img {
         margin: 0;
         padding: 30px;
     }
   }
+}
+h1 {
+  float: right;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 37px;
+  font-family: $font-stack;
+  color: $primary-color;
+  font-size: 24px;
+  font-weight: 700;
+}
+p {
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack;
+  color: $primary-color;
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.5;
+  display: block;
 }
